@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table style='border: 1px solid black; border-collapse: collapse;'>
+
+    <tr>
+        <th style='border: 1px solid black; border-collapse: collapse; padding: 15px;'>currency</th>
+        <th style='border: 1px solid black; border-collapse: collapse; padding: 15px;'>Price</th>
+    </tr>
+
+
+    {% for key, value in currency.items() %}
+    <tr>
+        <th style='border: 1px solid black; border-collapse: collapse; padding: 15px;'>{{ key }}</th>
+        <th style='border: 1px solid black; border-collapse: collapse; padding: 15px;'>{{ value }}</th>
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+{% endblock %}
